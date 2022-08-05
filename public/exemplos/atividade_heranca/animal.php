@@ -31,6 +31,22 @@ class Cachorro extends Animal{
     }
 
 public function manso(){
-    echo "Estou na classe {$this->nomeClasse} sou um {$this->nome} de médio {$this->tipo} da {$this->raca} manso";
+    echo "Estou na classe {$this->nomeClasse} meu nome é {$this->nome} sou de médio {$this->tipo} da raça {$this->raca} porém sou manso";
+    }
+
 }
+
+class Peixe extends Animal{
+    private $especie;
+
+    public function __construct($nome, $tipo, $origem, $raca, $especie ){
+        parent::__construct($nome, $tipo, $origem, $raca, $especie); 
+        $this->especie = $especie;
+    }
+
+public function relatorio(){
+    echo "Estou na classe {$this->nomeClasse} meu nome é {$this->nome} da especié {$this->especie} ";
+    }
 }
+
+
