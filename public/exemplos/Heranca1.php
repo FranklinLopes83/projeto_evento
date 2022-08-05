@@ -38,10 +38,13 @@ class Carro extends Veiculo{
     public function limparParaBrisa(){
         echo "{$this->nomeClasse} ligou o para0brisa";
     }
-      
-
 }
 
+class Moto extends Veiculo{
 
+    public function usarDescanso(){
+        echo "{$this->nomeClasse} está no descanso";
+    }
+}
 
 
